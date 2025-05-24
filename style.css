@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+.background{
+    transform: translateZ(-40px) scale(5);
+    object-fit: cover;
+}
+.foreground{
+    transform: translateZ(-20px) scale(1.6);
+    top: 79%;
+    right: 90%;
+    object-fit: contain;
+}
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+h1{
+    color: hsl(30, 91%, 17%);
+    position: absolute;
+    font-size: 8rem;/* 1rem=16px*/
+    bottom: 60%;
+}
+section{
+
+    z-index: 1;
+    position: relative;
+    font-size: 1.5rem;
+    left: 0.55%;
+    background-color: rgb(81, 56, 1);
+    color: rgb(239, 235, 237);
+    padding: 5rem 0;
+    
+}
+.head1{
+    font-size: 5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+
+}
+.head{
+    font-size: 3rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(77, 51, 4);
+    background-clip: calc();
+    border-radius: 40px;
+
+}
+
+.text{
+    font-size:1.5rem;
+    padding: 0 10rem;
+}
+
+.bg{
+    position: relative;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.bg1{
+    background-image: url(tilling.jpg);
+}
+.bg2{
+    background-image: url(showing.jpg);
+}
+.bg3{
+    background-image: url(preparing.jpg);
+}
+.bg4{
+    background-image: url(harvesting.jpg);
+}
